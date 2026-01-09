@@ -1,0 +1,29 @@
+User Symptoms: yellow_crust_ooze,red_sore_around_nose,small_dents_in_nails,inflammatory_nails,blister
+Predicted Disease: Impetigo
+
+Description:
+Impetigo is a highly contagious skin infection causing red sores that can break open.
+
+Precautions:
+soak affected area in warm water
+use antibiotics
+remove scabs with wet compressed cloth
+consult doctor
+
+Medications:
+['Topical antibiotics', 'Oral antibiotics', 'Antiseptics', 'Ointments', 'Warm compresses']
+
+Recommended Diet:
+['Impetigo Diet', 'Antibiotic treatment', 'Fruits and vegetables', 'Hydration', 'Protein-rich foods']
+
+Workout:
+Maintain good hygiene
+Stay hydrated
+Consume nutrient-rich foods
+Limit sugary foods and beverages
+Include foods rich in vitamin C
+Consult a healthcare professional
+Follow medical recommendations
+Avoid scratching
+Take prescribed antibiotics
+Practice wound care

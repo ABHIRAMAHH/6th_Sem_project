@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Disease</title>
+</head>
+<body>
+    <h1>Enter Symptoms</h1>
+    <form action="/predict" method="POST">
+        <label for="symptoms">Enter symptoms (comma separated):</label>
+        <textarea id="symptoms" name="symptoms" rows="5" cols="50" required></textarea><br><br>
+        <button type="submit">Predict Disease</button>
+    </form>
+
+    {% if disease %}
+        <h2>Prediction Results</h2>
+        <p><strong>Disease:</strong> {{ disease }}</p>
+        <p><strong>Description:</strong> {{ description }}</p>
+
+        <h3>Precautions:</h3>
+        <ul>
+            {% for precaution in precautions %}
+                <li>{{ precaution }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Medications:</h3>
+        <ul>
+            {% for med in medications %}
+                <li>{{ med }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Diet Recommendations:</h3>
+        <ul>
+            {% for item in diet %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Workout Plan:</h3>
+        <ul>
+            {% for item in workout %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3><a href="/static/{{ pdf }}">Download PDF Report</a></h3>
+    {% endif %}
+</body>
+</html>
