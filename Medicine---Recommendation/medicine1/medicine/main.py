@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Initialize Gemini API client
 # Note: In production, use environment variables for the API key
-client = genai.Client(api_key="AIzaSyDIKeho82uzNRnpQi_G1zu-Jj9s97dwbJk")
+client = genai.Client(api_key="your API")
 
 # load database datasets
 sym_des = pd.read_csv("Datasets/symtoms_df.csv")
